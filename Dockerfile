@@ -12,4 +12,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN sbt -sbt-version $SBT_VERSION
-ENTRYPOINT sbt
+ENTRYPOINT ["sbt"]
